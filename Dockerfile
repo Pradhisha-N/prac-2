@@ -1,5 +1,5 @@
 FROM openjdk:17-slim
 WORKDIR /app
-COPY . .
+COPY target/my-app-1.0-SNAPSHOT.jar app.jar
 EXPOSE 8000
 CMD ["java", "-jar", "app.jar"]
